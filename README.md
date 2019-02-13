@@ -18,7 +18,7 @@ storiesOf('Example', module)
 .addDecorator(withL10n({
   locales: ['de', 'en', 'fr']
 }))
-.add('example-story', ({ locale }) => <p>selected: {locale}</p>)
+.add('example-story', () => ({ locale }) => <p>selected: {locale}</p>)
 ```
 
 # License
